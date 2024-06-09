@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Inter:wght@600&family=Noto+Serif+HK:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Inter Semi Bold */
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.content {
+    position: relative; /* Add position relative */
+    z-index: 1; /* Set a lower z-index */
+    /* Existing styles */
+}
+.navbar {
+    z-index: 3;
+    width: 300px;
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensure the logout button stays at the bottom */
+}
+
+.logo {
+    margin-bottom: 3px;
+    align-self: flex-start;
+}
+
+.logo-image {
+    height: 8vh;
+    padding-left: 20px;
+}
+
+.top-box {
+    border: 1px solid #FFFFFF;
+    width: 250px;
+    height: 250px;
+    background-color: #231C1C;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-image {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.user-name {
+    font-family: 'Noto Serif HK', serif;
+    font-size: 20px;
+    font-weight: 400; /* Regular weight */
+    margin-bottom: 5px;
+}
+
+.user-details {
+    font-family: 'Noto Serif HK', serif;
+    font-size: 12px;
+    font-weight: 400; /* Regular weight */
+    text-align: left;
+    margin-left: 4px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Allow the menu to grow to fill space */
+    justify-content: center; /* Center the menu items */
+}
+
+.nav-button {
+    display: block;
+    width: 214px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #211916;
+    color:#a19e9d;
+    text-decoration: none;
+    margin-bottom: 12px; /* 5px space between each button */
+    border-radius: 10px; /* Curved edges of 10px */
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif; /* Inter Semi Bold */
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-button:last-child {
+    margin-bottom: 0; /* No margin for the last button */
+}
+
+.logout-button {
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background-color: #211916;
+    color:#d1d1d1;
+    text-decoration: none;
+    border-radius: 5px; /* Curved edges of 5px */
+    border: 1px solid #FFFFFF; /* Border of thickness 1px and color #FFFFFF */
+    transition: background-color 0.3s ease;
+    font-family: 'Averia Serif Libre', serif; /* Averia Serif Libre Bold */
+    font-weight: 700;
+    align-self: center; /* Center the logout button */
+}
+
+.nav-button:hover, .logout-button:hover {
+    background-color: #444;
+}
+
+.hamburger-menu {
+    display: none;
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #000000;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu .nav-button {
+    padding-right: 10px;  /* Right padding to avoid sticking to the edge */
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    background-color: #211916;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Curved edges of 10px */
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif; /* Inter Semi Bold */
+    font-weight: 600;
+}
+
+.mobile-menu .nav-button:hover {
+    background-color: #444;
+}
+
+.mobile-menu .logout-button {
+    width: 162px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background-color: #211916;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Curved edges of 5px */
+    margin-top: 45px; /* 45px space below the About button */
+    border: 1px solid #FFFFFF; /* Border of thickness 1px and color #FFFFFF */
+    transition: background-color 0.3s ease;
+    font-family: 'Averia Serif Libre', serif; /* Averia Serif Libre Bold */
+    font-weight: 700;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width percentage as needed */
+    height: 60%; /* Adjust the height percentage as needed */
+    max-width: 800px; /* Set a maximum width */
+    max-height: 500px; /* Set a maximum height */
+    background-color: #0C0808;
+    opacity: 0.5;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    background-color: #0C0808;
+    opacity: 0.5;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .mobile-menu .nav-button {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        height: calc(100vh - 70px); /* Adjusting for hamburger menu height */
+        padding: 0;
+    }
+    .main-image {
+        height: 100%;
+    }
+    .user-info {
+        display: none;
+    }
+}

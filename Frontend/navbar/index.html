@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-image">
+        </div>
+        <div class="top-box">
+            <img src="img/avatar.png" alt="Avatar" class="avatar-image">
+            <div class="user-info">
+                <div class="user-name">Shovan Mondal</div>
+                <div class="user-details">USN: 1CR23IS160<br>Semester: II<br>Course: BE(ISE)<br>Sec: C</div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="nav-button">Profile</a>
+            <a href="#" class="nav-button">Register</a>
+            <a href="#" class="nav-button">Leave Request</a>
+            <a href="#" class="nav-button">Maintenance Request</a>
+            <a href="#" class="nav-button">Raise Complaint</a>
+            <a href="#" class="nav-button">About</a>
+            <a href="#" class="logout-button">Logout</a>
+        </div>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" class="nav-button">Profile</a>
+            <a href="#" class="nav-button">Register</a>
+            <a href="#" class="nav-button">Leave Request</a>
+            <a href="#" class="nav-button">Maintenance Request</a>
+            <a href="#" class="nav-button">Raise Complaint</a>
+            <a href="#" class="nav-button">About</a>
+            <a href="#" class="nav-button logout-button">Logout</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="overlay-box"></div>
+        <img src="img/College.png" alt="Main Content Image" class="main-image">
+    </div>
+
+
+</body>
+</html>
