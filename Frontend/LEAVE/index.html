@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Leave Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" class="logo-image">
+            </div>
+            <div class="top-box">
+                <img src="img/avatar.png" alt="Avatar" class="avatar-image">
+                <div class="user-info">
+                    <div class="user-name">Shovan Mondal</div>
+                    <div class="user-details">USN: 1CR23IS160<br>Semester: II<br>Course: BE(ISE)<br>Sec: C</div>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="../PROFILE/index.html" class="nav-button">Profile</a>
+                <a href="../REGISTER/index.html" class="nav-button">Register</a>
+                <a href="#" class="nav-button">Leave Request</a>
+                <a href="../ERROR/index.html" class="nav-button">Maintenance Request</a>
+                <a href="../ERROR/index.html" class="nav-button">Raise Complaint</a>
+                <a href="../ERROR/index.html" class="nav-button">About</a>
+                <a href="" class="logout-button">Logout</a>
+            </div>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="../PROFILE/index.html" class="nav-button">Profile</a>
+                <a href="../REGISTER/index.html" class="nav-button">Register</a>
+                <a href="../LR/index.html" class="nav-button">Leave Request</a>
+                <a href="../ERROR/index.html" class="nav-button">Maintenance Request</a>
+                <a href="../ERROR/index.html" class="nav-button">Raise Complaint</a>
+                <a href="../ERROR/index.html" class="nav-button">About</a>
+                <a href="" class="nav-button logout-button">Logout</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1 class="left-align">Hostel | Leave Request</h1>
+            <p>Once requested for a leave, please wait up to 12 hours for it to get approved. Please contact the warden before leaving the hostel.</p>
+            <form>
+                <div class="form-group">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" class="input-small">
+                </div>
+                <div class="form-group">
+                    <label for="room-no">Room No.:</label>
+                    <input type="text" id="room-no" class="input-small" >
+                </div>
+                <div class="form-group">
+                    <label for="sharing">Sharing:</label>
+                    <input type="text" id="sharing" class="input-small" >
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason:</label>
+                    <textarea id="reason" class="textarea-large" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <textarea id="location" class="textarea-small" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="from">From:</label>
+                    <input type="date" id="from" class="input-date">
+                    <label for="to">To:</label>
+                    <input type="date" id="to" class="input-date">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-contact-name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency-contact-name" class="input-small">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-contact-number">Emergency Contact Number:</label>
+                    <input type="text" id="emergency-contact-number" class="input-small">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-image">
+        </div>
+        <div class="top-box">
+            <img src="img/avatar.png" alt="Avatar" class="avatar-image">
+            <div class="user-info">
+                <div class="user-name">Shovan Mondal</div>
+                <div class="user-details">USN: 1CR23IS160<br>Semester: II<br>Course: BE(ISE)<br>Sec: C</div>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="nav-button">Profile</a>
+            <a href="../REGISTER/index.html" class="nav-button">Register</a>
+            <a href="../LR/index.html" class="nav-button">Leave Request</a>
+            <a href="../ERROR/index.html" class="nav-button">Maintenance Request</a>
+            <a href="../ERROR/index.html" class="nav-button">Raise Complaint</a>
+            <a href="../ERROR/index.html" class="nav-button">About</a>
+            <a href="" class="logout-button">Logout</a>
+        </div>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="../PROFILE/index.html" class="nav-button">Profile</a>
+            <a href="../REGISTER/index.html" class="nav-button">Register</a>
+            <a href="../LR/index.html" class="nav-button">Leave Request</a>
+            <a href="../ERROR/index.html" class="nav-button">Maintenance Request</a>
+            <a href="../ERROR/index.html" class="nav-button">Raise Complaint</a>
+            <a href="../ERROR/index.html" class="nav-button">About</a>
+            <a href="" class="nav-button logout-button">Logout</a>
+        </div>
+    </div>
+    <div class="profile">
+        <h1>HOSTEL | YOUR PROFILE</h1>
+        <div class="profile-details">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td>Vedant Gupta</td>
+                    </tr>
+                    <tr>
+                        <td>E-Mail:</td>
+                        <td>vegu23ise@cmrit.ac.in</td>
+                    </tr>
+                    <tr>
+                        <td>Student Ph.No:</td>
+                        <td>8828268843</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Aadhar Card No.:</td>
+                        <td>630415261642</td>
+                    </tr>
+                    <tr>
+                        <td>USN:</td>
+                        <td>1CR23IS193</td>
+                    </tr>
+                    <tr>
+                        <td>Room No.:</td>
+                        <td>101A</td>
+                    </tr>
+                    <tr>
+                        <td>Sharing:</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Block Name:</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Branch:</td>
+                        <td>ISE</td>
+                    </tr>
+                    <tr>
+                        <td>Application ID:</td>
+                        <td>1232424353</td>
+                    </tr>
+                    <tr>
+                        <td>Mothers' Name:</td>
+                        <td>Mother</td>
+                    </tr>
+                    <tr>
+                        <td>Fathers' Name:</td>
+                        <td>Father</td>
+                    </tr>
+                    <tr>
+                        <td>Mothers Contact Details:</td>
+                        <td>877583787</td>
+                    </tr>
+                    <tr>
+                        <td>Fathers Contact Details:</td>
+                        <td>385683579</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
