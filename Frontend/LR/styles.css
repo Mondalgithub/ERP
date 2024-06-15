@@ -57,6 +57,7 @@ body {
 
 .sidebar-button:hover {
     background-color: #555;
+    opacity: 81%;
 }
 
 .logout {
@@ -120,6 +121,7 @@ body {
 
 .main-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    opacity: 81%;
 }
 
 
@@ -153,8 +155,10 @@ body {
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-      padding-bottom: 2%;
-      text-align: left;
+    padding-bottom: 2%;
+    text-align: left;
+    position: fixed;
+    bottom: 80%;
   }
 
   button {
@@ -174,32 +178,8 @@ body {
 
 button:hover {
     background-color: #555;
+    opacity: 81%;
 }
-
-
-@media (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-    .mobile-menu {
-        display: flex;
-    }
-    .mobile-menu .nav-button {
-        width: 70%;
-        margin: 10px auto;
-    }
-
-    .user-info {
-        display: none;
-    }
-    .profile h1 {
-        padding-top: 15%;
-    }
-}
-
 
 
 
@@ -315,6 +295,7 @@ button:hover {
 
 .nav-button:hover, .logout-button:hover {
     background-color: #444;
+    opacity: 81%;
 }
 
 .hamburger-menu {
@@ -363,6 +344,7 @@ button:hover {
 
 .mobile-menu .nav-button:hover {
     background-color: #444;
+    opacity: 81%;
 }
 
 .mobile-menu .logout-button {
@@ -385,7 +367,7 @@ button:hover {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
 
-    .content {
+        .content {
             padding: 60px;
         }
     
@@ -403,26 +385,28 @@ button:hover {
         .actions {
             flex-direction: column;
             align-items: center;
+            padding-top: 7%;
         }
     
         button {
-            margin-bottom: 20%;
-        margin-top: -16%;
-        font-size: 65%;
-        padding: 15px 15px;
-        width: 60%;
+            font-size: 65%;
+            padding: 15px 15px;
+            width: 60%;
         }
-    
-        
-        .actions {
-            flex-direction: column;
-            align-items: center;
+        .profile-details {
+            padding: 11%;
+            margin: 6%;
         }
-    
+        .profile  h1 {
+            padding-left: 4%;
+        }
         h1 {
             font-size: 125%;
-            margin-top: 35%;
         }
+        .user-info {
+            display: none;
+        }
+        
 }
 
 @media (max-width: 768px) {
@@ -441,3 +425,4 @@ button:hover {
     }
 
 }
+

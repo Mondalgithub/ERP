@@ -31,11 +31,13 @@ h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
-    font-size: 29px;
+    font-size: 20px;
     font-style: normal;
     font-variation-settings: "slnt" 0;
     padding-bottom: 2%;
-    margin-bottom: 10%;
+    position: fixed;
+    bottom: 80%;
+    left: 31%;
 }
 .profile-info {
     background-color: #3a3a3a;
@@ -102,6 +104,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 29%;
 }
 
 button:hover {
