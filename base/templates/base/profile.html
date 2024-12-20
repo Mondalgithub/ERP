@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Profile</h1>
+
+<div>
+    <div>
+        {% for profile in profiles %}
+        <div>
+            <h3>{{profile.id}} - <a href="{% url 'crud' pk=profile.id %}">{{profile.name}}</a> - {{profile.course}} - {{profile.room_no}} - {{profile.sharing}}  - <a href="{% url  'Delete' pk=profile.id%}">Delete</a></h3>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div>
+    <a href="{% url 'requests' %}">Request for leave</a>
+</div>
+
+{% endblock %}

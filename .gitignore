@@ -1,0 +1,43 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+env/
+venv/
+ENV/
+.VENV/
+
+# Django specific files
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# VS Code configuration
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# IDE specific files
+.idea/
+*.swp
+
+# Migrations (optional: if you want to version-control migrations, remove this line)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Secrets and environment variables
+.env
+*.key
+
+# Node.js dependencies (if using npm/yarn in the project)
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+coverage.xml

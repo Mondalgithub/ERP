@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Leave Requests</h1>
+    <ul>
+        {% for request in requests %}
+            <li>
+                <strong>{{ request.name }}</strong>: {{ request.reason }}<br>
+                Contact: {{ request.contact_details }}<br>
+                Location: {{ request.location }}<br>
+                Status: 
+                {% if request.is_accepted %}
+                    Accepted
+                {% else %}
+                    Pending
+                {% endif %}
+                {% if not request.is_accepted %}
+                    <form method="post" action="{% url 'accept_leave_request' request.pk %}">
+                        {% csrf_token %}
+                        <button type="submit">Accept</button>
+                    </form>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'submit_leave_request' %}">Submit Another Leave Request</a>
+
+{% endblock %}
